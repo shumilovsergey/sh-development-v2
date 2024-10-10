@@ -1,13 +1,16 @@
 function loadContent() {
     const contentDiv = document.getElementById('content');
 
-    // Check screen width to determine which HTML snippet to load
     if (window.innerWidth <= 1149) {
         // Load mobile.html content
         fetch('mobile.html')
             .then(response => response.text())
             .then(data => {
                 contentDiv.innerHTML = data;
+                // Load mobile-specific JavaScript
+                const script = document.createElement('script');
+                script.src = 'mobile.js';
+                document.body.appendChild(script);
             });
     } else {
         // Load desktop.html content
@@ -15,12 +18,15 @@ function loadContent() {
             .then(response => response.text())
             .then(data => {
                 contentDiv.innerHTML = data;
+                // Load desktop-specific JavaScript
+                const script = document.createElement('script');
+                script.src = 'desktop.js';
+                document.body.appendChild(script);
             });
     }
 }
 
 loadContent();
-
 window.addEventListener('resize', loadContent);
 
 

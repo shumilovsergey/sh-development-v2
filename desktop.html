@@ -1,5 +1,3 @@
-desktop
-
 <div class="card">
     <div class="avatar-holder">
         <!-- avatart -->
@@ -31,30 +29,30 @@ desktop
         <!-- buttons -->
         <div class="navigation-button-holder">
             <div>
-                <div class="navigation-button">Про меня</div>
-                <div class="navigation-border"></div>
+                <div class="navigation-button" onclick="showContainer('c0')">Про меня</div>
+                <div class="navigation-border" id="c0-b"></div>
             </div>
 
             <div>
-                <div class="navigation-button">Карьера</div>
-                <div class="navigation-border"></div>
+                <div class="navigation-button" onclick="showContainer('c1')">Карьера</div>
+                <div class="navigation-border" id="c1-b" style="display: none;"></div>
             </div>
 
             <div>
-                <div class="navigation-button">Проекты</div>
-                <div class="navigation-border"></div>
+                <div class="navigation-button" onclick="showContainer('c2')">Проекты</div>
+                <div class="navigation-border" id="c2-b" style="display: none;"></div>
             </div>
 
             <div>
-                <div class="navigation-button">Навыки</div>
-                <div class="navigation-border"></div>
+                <div class="navigation-button" onclick="showContainer('c3')">Навыки</div>
+                <div class="navigation-border" id="c3-b" style="display: none;"></div>
             </div>
         </div>
 
         <!-- text -->
         <div class="text-holder-main">
             <!-- про меня -->
-            <div class="text-holder-sub">
+            <div id="c0" class="text-holder-sub">
                 <div class="me-fio">Шумилов Сергей</div>
                 <div class="me-position">Системный администратор / DevOps</div>
                 <div class="me-description">
@@ -67,7 +65,7 @@ desktop
             </div>
 
             <!-- карьера -->
-            <div class="text-holder-sub">
+            <div id="c1" style="display: none;" class="text-holder-sub">
                 <div class="work">
                     <div class="work-date">[ Февраль 2022 / по настоящее время ]</div>
                     <div class="work-position">Системный администратор</div>
@@ -105,19 +103,90 @@ desktop
             </div>
 
             <!-- проекты -->
-            <div class="text-holder-sub">
-                проекты
+            <div id="c2" style="display: none;" class="text-holder-sub">
+                <div class="project-card">
+                    <div class="project-card-name">proxy-frog</div>
+                    <div class="project-card-description">
+                        Расширение для браузера хром. Можно быстро включать/ выключать 
+                        и настраивать прокси соединение
+                    </div>
+                    <a class="project-card-url" href="https://github.com/shumilovsergey/proxy-frog/blob/main/README.md">url</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-name">telegram bot/app</div>
+                    <div class="project-card-description">
+                        Бот-меню с админкой для канала в телеграме. 
+                        Помогает пользователю ориентироваться среди 
+                        большого количества контента
+                    </div>
+                    <!-- <a class="project-card-url" href="">url</a> -->
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-name">wget bash</div>
+                    <div class="project-card-description">
+                        Мне часто приходится работать с bash скриптами. 
+                        Чтобы работать с ними эффективней я решил создать этот ресурс. 
+                        Тут можно сохранять скрипты, формировать последовательности и получать 
+                        доступ к ним через команду wget
+                    </div>
+                    <a class="project-card-url" href="https://wgetbash.sh-development.ru/?">url</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-name">школа</div>
+                    <div class="project-card-description">
+                        Поддерживаю работоспособность внутренней локальной сети и web ресурсов
+                    </div>
+                    <a class="project-card-url" href="https://sch16spb.ru/">url</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-name">сайт визитка</div>
+                    <div class="project-card-description">
+                        Для демонстрации своих второстепенные навыков, я решил создать эту страничку с небольшим описанием себя 
+                        и того, чем я занимаюсь.
+                    </div>
+                    <a class="project-card-url" href="https://sh-development.ru/">url</a>
+                </div>
+
             </div>
 
             <!-- навыки -->
-            <div class="text-holder-sub">
-                навыки
+            <div id="c3" style="display: none;" class="text-holder-sub">
+                <div class="skill-holder">
+                    <div class="skill"></div>
+                    <div class="skill">linux</div>
+                    <div class="skill">python</div>
+                    <div class="skill">git-hub/git-hub actions</div>
+                    <div class="skill">django/rest</div>
+                    <div class="skill">bash</div>
+                    <div class="skill">docker/docker-compose</div>
+                    <div class="skill">routerOS</div>
+                    <div class="skill">nginx</div>
+                    <div class="skill">zabbix</div>
+                    <div class="skill">cron</div>
+                    <div class="skill">openvpn(client/server)</div>
+                    <div class="skill">ssh/tunels</div>
+                    <div class="skill">shadowsocks(client/server)</div>
+                    <div class="skill">virtualbox</div>
+                    <div class="skill">hikvision</div>
+                    <div class="skill">sql</div>
+                    <div class="skill">obsidian</div>
+                    <div class="skill">windows(client/server)</div>
+                    <div class="skill">dns/dhcp/ssl</div>
+                    <div class="skill">active directory</div>
+                    <div class="skill">redis</div>
+                    <div class="skill">telegram_api</div>
+                    <div class="skill">html/css/javascript</div>
+                    <div class="skill">webhook</div>
+                    <div class="skill">tailwind</div>
+                    <div class="skill">vnc server</div>
+                    <div class="skill">proxy (squid / nginx)</div>
+                    <div class="skill">chrome extention</div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-

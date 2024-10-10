@@ -85,6 +85,7 @@
     color: #ffffff; 
     border-radius: 0.25rem; 
     transition-duration: 500ms; 
+    cursor: pointer;
 }
 
 .navigation-button:hover {
@@ -158,6 +159,7 @@
     line-height: 2rem; 
     text-decoration: none;
     transition: color 0.5s; 
+    cursor: pointer;
 }
 
 .work-name:hover {
@@ -168,4 +170,57 @@
     color: #d1d5db; 
     font-size: 1.125rem; 
     margin-top: 2rem; 
+}
+
+.project-card {
+    margin-bottom: 4rem; 
+    margin-top: 1rem; 
+}
+
+.project-card-name {
+    color: white; 
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+    margin-bottom: 0.75rem; 
+    text-align: left; 
+}
+
+.project-card-description {
+    color: #cbd5e1; 
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+    margin-bottom: 1.25rem; 
+}
+
+.project-card-url {
+    background-color: #f97316; 
+    width: 3rem; 
+    border-radius: 1.5rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.5s, width 0.5s; 
+    text-decoration: none;
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+    color: white; 
+}
+
+.project-card-url:hover {
+    background-color: #fb923c; 
+    width: 3.5rem; 
+}
+
+.skill-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.skill {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
