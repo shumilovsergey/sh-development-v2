@@ -2,6 +2,7 @@
 .container {
     background-color: #64748b; 
     min-width: 485px; 
+    zoom: 0.8;
 }
 
 .navigation-bar {
