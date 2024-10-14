@@ -1,5 +1,8 @@
 function loadContent() {
     const contentDiv = document.getElementById('content');
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+
 
     if (window.innerWidth <= 1149) {
         // Load mobile.html content
@@ -7,6 +10,8 @@ function loadContent() {
             .then(response => response.text())
             .then(data => {
                 contentDiv.innerHTML = data;
+                link.href = 'mobile.css';
+
             });
     } else {
         // Load desktop.html content
@@ -14,8 +19,13 @@ function loadContent() {
             .then(response => response.text())
             .then(data => {
                 contentDiv.innerHTML = data;
+                link.href = 'desktop.css';
+
             });
     }
+    document.head.appendChild(link);
+    // document.addEventListener('DOMContentLoaded', loadCSS);
+    window.removeEventListener('resize', loadContent);
 }
 
 loadContent();
