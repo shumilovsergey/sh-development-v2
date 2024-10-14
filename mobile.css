@@ -1,2 +1,226 @@
 
+.container {
+    background-color: #64748b; 
+    min-width: 485px; 
+}
 
+.navigation-bar {
+    display: flex; 
+    justify-content: space-evenly; 
+    background-image: linear-gradient(to right, #334155, #1e293b); 
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); 
+    opacity: 0.9;
+    margin-bottom: 5rem; 
+}
+
+.navigation-button {
+    font-size: 1.25rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    color: #ffffff; 
+    border-radius: 0.375rem; 
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.navigation-button:hover {
+    background-color: #334155;
+}
+
+.navigation-border {
+    border-bottom-width: 2px; 
+    border-bottom-style: solid; 
+    margin-top: 0.5rem; 
+    border-bottom-color: #f97316;  
+}
+
+.content {
+    display: flex;          
+    justify-content: center;   
+    align-content: center;      
+}
+
+.content-container {
+    background-image: linear-gradient(to right, #334155, #1E293B); 
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.25); 
+    opacity: 0.9; 
+    border-radius: 1rem; 
+    width: 485px; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+}
+
+.partition {
+    display: flex;           
+    flex-direction: column;     
+    align-items: center;         
+}
+
+.avatar {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem; 
+    border-radius: 100%; 
+    background-color: #334155; 
+    height: 20rem; 
+    width: 20rem; 
+    border-color: #f97316; 
+    border-width: 2px; 
+    border-style: solid; 
+}
+
+.shortcuts-holder {
+    margin-right: 3.5rem;
+    padding-bottom: 2rem; 
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 20rem; 
+    height: 2.5rem; 
+}
+
+.shortcut-icon {
+    width: 3.5rem; 
+    position: absolute; 
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.shortcut-icon:hover {
+    width: 4rem; 
+}
+
+.text-holder {
+    background-color: #334155;  
+    padding-left: 2.5rem;        
+    padding-right: 2.5rem;    
+    margin-left: 1rem;         
+    margin-right: 1rem;    
+    padding-top: 1rem;       
+    padding-bottom: 2.5rem;    
+    border-color: #64748B;      
+    border-width: 1px;          
+    border-radius: 1rem;  
+    margin-top: 0.5rem;    
+    margin-bottom: 3.5rem;   
+    border-style: solid; 
+}
+
+.text-holder-2 {
+    padding-left: 2.5rem;        
+    padding-right: 2.5rem;    
+    margin-left: 1rem;         
+    margin-right: 1rem;    
+    padding-top: 1rem;       
+    padding-bottom: 2.5rem;      
+    margin-top: 0.5rem;    
+    margin-bottom: 3.5rem;   
+}
+
+.me-fio {
+    color: #ffffff; 
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+    margin-bottom: 0.5rem;
+    text-align: center; 
+}
+
+.me-position {
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    line-height: 2rem; 
+    margin-bottom: 2.5rem; 
+    text-align: center; 
+}
+
+.me-description {
+    color: #cbd5e1; 
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+}
+
+.work {
+    margin-bottom: 5rem;
+    margin-top: 1rem; 
+}
+
+.work-date {
+    color: #64748b;
+}
+
+.work-position {
+    color: #ffffff; 
+    font-size: 1.875rem; 
+    margin-bottom: 0.25rem; 
+}
+
+.work-name {
+    color: #f97316; 
+    font-size: 1.5rem;
+    transition: color 500ms; 
+    cursor: pointer;
+    line-height: 2rem; 
+}
+
+.work-name:hover {
+    color: #fb923c; 
+}
+
+.work-deskription {
+    color: #cbd5e1; 
+    font-size: 1.125rem; 
+    margin-top: 2rem; 
+}
+
+.project-card {
+    margin-bottom: 4rem; 
+    margin-top: 1rem; 
+}
+
+.project-card-name {
+    color: white; 
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+    margin-bottom: 0.75rem; 
+    text-align: left; 
+}
+
+.project-card-description {
+    color: #cbd5e1; 
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+    margin-bottom: 1.25rem; 
+}
+
+.project-card-url {
+    background-color: #f97316; 
+    width: 3rem; 
+    border-radius: 1.5rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.5s, width 0.5s; 
+    text-decoration: none;
+    font-size: 1.125rem; 
+    line-height: 1.75rem; 
+    color: white; 
+}
+
+.project-card-url:hover {
+    background-color: #fb923c; 
+    width: 3.5rem; 
+}
+
+.skill-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.skill {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
