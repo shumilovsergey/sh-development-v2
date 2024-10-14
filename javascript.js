@@ -25,11 +25,11 @@ function loadContent() {
     }
     document.head.appendChild(link);
     // document.addEventListener('DOMContentLoaded', loadCSS);
-    window.removeEventListener('resize', loadContent);
+    // window.removeEventListener('resize', loadContent);
 }
 
-loadContent();
-window.addEventListener('resize', loadContent);
+
+// window.addEventListener('resize', loadContent);
 
 
 function copyToClipboard() {
@@ -65,3 +65,6 @@ function showContainer(containerId) {
     // Show the selected border
     document.getElementById(borderId).style.display = 'block';
 }  
+
+
+loadContent();
